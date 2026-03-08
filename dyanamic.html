@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Webpage Example</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        #message{
+            font-size: 22px;
+            color: blue;
+            margin-bottom: 20px;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Dynamic Webpage using JavaScript DOM</h2>
+
+    <p id="message">Click the button to change this text.</p>
+
+    <button onclick="changeContent()">Click Me</button>
+
+    <script>
+        function changeContent(){
+            document.getElementById("message").innerHTML = 
+            "The content has been updated dynamically!";
+        }
+    </script>
+
+</body>
+</html>
